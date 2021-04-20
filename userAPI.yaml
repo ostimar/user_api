@@ -124,9 +124,9 @@ components:
         - password
         - age
   securitySchemes:
-    ApiKeyAuth:
-      type: apiKey
-      in: header
-      name: auth 
+    auth:         
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
 security:
-  - ApiKeyAuth: []
+  - auth: []
