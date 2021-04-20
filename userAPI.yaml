@@ -124,9 +124,9 @@ components:
         - password
         - age
   securitySchemes:
-    auth:         
+    Authorization:         
       type: http
       scheme: bearer
       bearerFormat: JWT
 security:
-  - auth: []
+  - Authorization: []
